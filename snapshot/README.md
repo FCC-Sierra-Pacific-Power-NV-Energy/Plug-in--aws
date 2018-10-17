@@ -1,9 +1,8 @@
 # Snapshot Plug-in Workflow Step Package
-# vCommander Supported Build Version 1006050089
 
 This package contains a collection of vCommander plug-in workflow steps for managing VMware snapshots on Windows. 
 
-It can be used in the vCommander workflow extension scenario *Patching Windows VMs*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of vCommander scenarios. 
+It can be used in the vCommander workflow extension scenario *Patching Windows VMs*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of vCommander scenarios.
 
 ## Changelog
 
@@ -18,41 +17,72 @@ It can be used in the vCommander workflow extension scenario *Patching Windows V
 
 **Purpose:** Creates a new snapshot.
 
+**Workflows supporting this plug-in step:**
+
+* Command workflows
+* Completion workflows for a VM
+* Completion workflows for a  shared VM
+* Change request approval workflows
+* Completion workflows for a change request 
+
 **Inputs:** 
 
-- Input field for Snapshot name
-- Input field for Snapshot description (optional)
-- Checkbox for Capture Memory
-- Checkbox for Quiesce Filesystem
+- Step Name: Input field for the name of the step
+- Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
+- Snapshot Name: Input field for the name of the snapshot to create
+- Description: (Optional) Input field for Snapshot description
+- Capture Memory option
+- Quiesce Filesystem option
 
-See the vCenter Client documentation for more information on these fields.
+See the vCenter Client documentation for more information on the Capture Memory and Quiesce Filesystem options.
 
 ## Delete Snapshot
 
 **Purpose:** Deletes the latest snapshot with a given name
 
+**Workflows supporting this plug-in step:**
+
+* Command workflows
+* Completion workflows for a VM
+* Completion workflows for a  shared VM
+* Change request approval workflows
+* Completion workflows for a change request 
+
 **Inputs:**
-- Input field for Snapshot name 
+
+- Step Name: Input field for the name of the step
+- Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
+- Snapshot Name: Input field for name of the snapshot to delete
 
 ## Revert Snapshot
 
-**Purpose:** Reverts to the latest snapshot with a given name
+**Purpose:**  Reverts to the latest snapshot with a given name
+
+**Workflows supporting this plug-in step:**
+
+* Command workflows
+* Completion workflows for a VM
+* Completion workflows for a shared VM
+* Change request approval workflows
+* Completion workflows for a change request 
 
 **Inputs:**
-- Input field for Snapshot name 
+- Step Name: Input field for the name of the step
+- Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
+- Input field for the name of the snapshot to revert to
 
 ## Installation
 
-Plug-in workflow steps are supported with vCommander release 7.0 and higher. 
+Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
 
 See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
 
 ## Logging
 To change the logging level, add the following named loggers to the Log4j configuration file located at: 
 
-<vcommander-install>\tomcat\common\classes\log4j2.xml 
+`<vcommander-install>\tomcat\common\classes\log4j2.xml` 
 
 **General Utilities**
 
 - Loggers:
-  - `<Logger level="DEBUG" name="plugin.snapshot"/>`
+  - `<Logger level="DEBUG" name="wfplugins.snapshot"/>`
