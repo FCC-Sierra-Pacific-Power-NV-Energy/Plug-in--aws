@@ -15,12 +15,11 @@ It was designed specifically for use in the vCommander workflow extension scenar
 **Purpose:** Executes the ansible-playbook command to install a playbook on a target VM
 
 **Details:** 
-
  * https://docs.ansible.com/ansible/2.4/ansible-playbook.html
  * Copies playbook from URL or inline YAML to `/tmp/pb-[Workflow ID].yaml` on target VM
  * Executes `ansible-playbook -i localhost, -c local /tmp/pb-[Workflow ID].yaml`
  * If successful, deletes `/tmp/pb-[Workflow ID].yaml`
-
+ 
 **Workflows supporting this plug-in step:**
 
   * Command workflows

@@ -58,7 +58,7 @@ This package contains a collection of vCommander plug-in workflow steps for inte
 
 - Step Name: Input field for the name of the step
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-- Rules File: (Optional) Input field for the path to a rule configuration file. If this input is omitted, the default set of rules is used. (defaultBestPracticesRulesFile.yaml can be downloaded from the same location as this plug-in step package.)
+- Rules File: (Optional) Input field for the path to a rule configuration file. If this input is omitted, the default set of rules is used. (default-best-practices-rules.yaml can be downloaded from the same location as this plug-in step package.)
 
 ### Kubernetes Deploy Resource
 
