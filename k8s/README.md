@@ -18,7 +18,7 @@ This package contains a collection of vCommander plug-in workflow steps for inte
 **Details:**
 
 - Adds a Kubernetes cluster as a vCommander managed system
-- Supported in Completion and Command workflows
+- Supported in completion and command workflows
 
 **Workflows supporting this plug-in step:**
 
@@ -49,16 +49,16 @@ This package contains a collection of vCommander plug-in workflow steps for inte
 
 **Workflows supporting this plug-in step:**
 
- * Command
- * Change Request Completion
- * Service Completion
- * Custom Component Completion
+ * Command workflows
+ * Completion workflows for a change request
+ * Completion workflows for a service
+ * Completion workflows for a custom component
 
 **Inputs:**
 
 - Step Name: Input field for the name of the step
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-- Rules File: (Optional) Input field for the path to a rule configuration file. If this input is omitted, the default set of rules is used. (default-best-practices-rules.yaml can be downloaded from the same location as this plug-in step package.)
+- Rules File: (Optional) Input field for the path to a rule configuration file. If this input is omitted, the default set of rules is used. (`default-best-practices-rules.yaml` can be downloaded from the same location as this plug-in step package.)
 
 ### Kubernetes Deploy Resource
 
@@ -81,7 +81,7 @@ This package contains a collection of vCommander plug-in workflow steps for inte
   - If the Namespace field is blank, and the manifest is provided, then the latter is used
   - If both the Namespace and the manifest-specified namespace are blank, then the default namespace is used
 - K8s YAML Manifest: Input field for YAML manifests that describe the resource to deploy
-  - Must be a valid Kubernetes Resource format ([Understanding Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/))
+  - Must be a valid Kubernetes Resource format. See [Understanding Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/) for more information.
   - Should contain one or more manifests (separated by ---)
   - If a namespace is specified in the Namespace field, any namespace specified in a provided manifest is ignored
   - If the Namespace field is blank and no namespace is specified in a provided manifest, the default namespace is used
@@ -109,7 +109,7 @@ This package contains a collection of vCommander plug-in workflow steps for inte
 
 **Inputs:**
 
-- Step Name: Input field for the name of the step. 
+- Step Name: Input field for the name of the step
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
 - Namespace: Input field specifying the namespace to remove the resource from
   - If blank, the manifest must specify a namespace; if not blank, the manifest-specified namespace is ignored
@@ -117,7 +117,7 @@ This package contains a collection of vCommander plug-in workflow steps for inte
   - Must be a valid Kubernetes Resource format (https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
   - Should contain one or more manifests (separated by ---)
   - If a namespace is specified in the Namespace field, any namespace specified in the manifest is ignored
-  - If no namespace is specified in the Namespace field,  and no namespace is specified in the manifest, the default namespace is used
+  - If no namespace is specified in the Namespace field, and no namespace is specified in the manifest, the default namespace is used
 
 ## Installation
 

@@ -11,7 +11,7 @@ It was designed specifically for use in the *Deploying User Provided Terraform C
 ## Plug-in steps in this package
 + Generate Terraform Plan
 + Apply Terraform Plan
-+ Destroy Terraform-managed infrastructure
++ Destroy Terraform Managed Infrastructure
 
 ### Generate Terraform Plan
 **Purpose:** Runs the `terraform plan` command to generate a list of changes that would be performed
@@ -77,12 +77,13 @@ It was designed specifically for use in the *Deploying User Provided Terraform C
 * Configuration: Input field for Terraform configuration as a substitution variable
 * Variables: (Optional) Input field for Terraform variables as key=value pairs, separated by space or new line.
 
-### Destroy Terraform-managed infrastructure
-**Purpose:** Runs the `terraform destroy` command to delete Terraform-managed infrastructure
+### Destroy Terraform Managed Infrastructure
+**Purpose:** Runs the `terraform destroy` command to delete Terraform managed infrastructure
 
 **Details:** 
- * *[https://www.terraform.io/docs/commands/destroy.html](https://www.terraform.io/docs/commands/destroy.html)*
- * This step uses an intermediate server, which is accessible through SSH, to keep the Terraform state. Referred to hereafter as the Terraform host
+
+ * [https://www.terraform.io/docs/commands/destroy.html](https://www.terraform.io/docs/commands/destroy.html)
+ * This step uses an intermediate server, which is accessible through SSH, to keep the Terraform state. Referred to hereafter as the Terraform host.
  * This step requires the terraform binaries be installed on the intermediate server
  * This step is meant for a completion workflow
 

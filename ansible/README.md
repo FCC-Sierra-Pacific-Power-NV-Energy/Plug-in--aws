@@ -6,7 +6,7 @@ It was designed specifically for use in the vCommander workflow extension scenar
 
 ## Changelog
 
-**Version 1.0:** Initial version.
+**Version 1.0:** Initial version. 
 
 ## Plug-in steps in this package
 + Run ansible-playbook
@@ -19,7 +19,7 @@ It was designed specifically for use in the vCommander workflow extension scenar
  * Copies playbook from URL or inline YAML to `/tmp/pb-[Workflow ID].yaml` on target VM
  * Executes `ansible-playbook -i localhost, -c local /tmp/pb-[Workflow ID].yaml`
  * If successful, deletes `/tmp/pb-[Workflow ID].yaml`
- 
+
 **Workflows supporting this plug-in step:**
 
   * Command workflows

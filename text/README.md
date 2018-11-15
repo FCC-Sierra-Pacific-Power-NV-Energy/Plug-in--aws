@@ -27,13 +27,13 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 **Inputs:**
 
-- Step Name: Input field for the name of the step. 
+- Step Name: Input field for the name of the step
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
 - Template: Text area for input
 
 ### JsonPath Extract
 
-**Purpose:** Extracts text from the provided input using json-path, returning the first matched text as the vCommander variable #{steps['Step Name'].output}.
+**Purpose:** Extracts text from the provided input using json-path, returning the first matched text as the vCommander variable `#{steps['Step Name'].output}`.
 
 **Details:** See also: http://goessner.net/articles/JsonPath/
 
@@ -44,7 +44,7 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 **Inputs:**
 - Step Name: Input field for the name of the step
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-- Input:  Input field for data piped in through a variable
+- Input: Input field for data piped in through a variable
 - Expression: Input field for Json-Path expression. See https://github.com/json-path/JsonPath for reference information.
 
 ### RegEx Extract
@@ -100,7 +100,7 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 **Purpose:** Extracts text from the provided input using XPath.
 
-**Details:** Outputs the first matched text as #{steps['Step Name'].output}.
+**Details:** Outputs the first matched text as `#{steps['Step Name'].output}`.
 
 **Workflows supporting this plug-in step:**
 
@@ -110,7 +110,7 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 - Step Name: Input field for the name of the step
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-- Input:  Input field for data piped in through a variable
+- Input: Input field for data piped in through a variable
 - Expression: Input field for an XPath expression. See https://www.w3schools.com/xml/xpath_syntax.asp for reference information.
 
 ### XSLT Transform
@@ -121,7 +121,7 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 - Transforms the supplied input with a XSL stylesheet to the supplied output
 - Step output `#{steps[*].output}` is set to the filename, if an output file was specified, or to the transformed output, if an output filename was not specified
-- Uses the built-in Xalan XSLT support in the JDK.
+- Uses the built-in Xalan XSLT support in the JDK
 
 **Workflows supporting this plug-in step:**
 
@@ -131,9 +131,9 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 - Step Name: Input field for the name of the step
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-- Input:  Input field for XML data to be transformed. The XML input can be a file or data piped in through a variable.
+- Input: Input field for XML data to be transformed. The XML input can be a file or data piped in through a variable.
 - Output: Input field to specify how to output the transformed data. This can be a path to a file saved on disk, or, if the field is left blank, the output will be stored as step output for access by other steps. 
-- Stylesheet: Input field for an XSL stylesheet. This can be a path to a stylesheet saved on disk, or, if the field is left blank,  `junit-noframes-emb.xsl` from Apache Ant is used. 
+- Stylesheet: Input field for an XSL stylesheet. This can be a path to a stylesheet saved on disk, or, if the field is left blank, `junit-noframes-emb.xsl` from Apache Ant is used. 
 - Parameters: Text area for key=value pairs on parameters to pass in to the XSL stylesheet. Each key=value pair should be on a new line.
 
 ## Installation
