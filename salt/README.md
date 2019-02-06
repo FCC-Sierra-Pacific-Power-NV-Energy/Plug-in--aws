@@ -1,4 +1,4 @@
-# wfplugins-saltstack Workflow Plug-in Step Package
+# SaltStack Workflow Plug-in Step Package
 
 This package contains a collection of vCommander workflow plug-in steps for integrating with SaltStack.
 
