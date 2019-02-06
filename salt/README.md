@@ -1,6 +1,6 @@
-# SaltStack Workflow Plug-in Step Package
+# SaltStack Community Workflow Plug-in Step Package
 
-This package contains a collection of vCommander workflow plug-in steps for integrating with SaltStack.
+This package contains a collection of vCommander community workflow plug-in steps for integrating with SaltStack.
 
 ## Changelog
 
