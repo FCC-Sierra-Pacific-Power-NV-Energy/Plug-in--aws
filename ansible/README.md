@@ -6,6 +6,9 @@ It was designed specifically for use in the vCommander workflow extension scenar
 
 ## Changelog
 
+**Version 1.1**
+  * Added "Use Credentials for sudo Password" option. Users who require a password prompt can run the script when this option is enabled.
+
 **Version 1.0:** Initial version. 
 
 ## Plug-in steps in this package
@@ -34,6 +37,7 @@ It was designed specifically for use in the vCommander workflow extension scenar
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
 * Timeout: Input field for timeout (in seconds)
 * OS Credentials: Input field for OS credentials required to execute the command on the target VM
+* User Credentials for sudo Password: Enable this checkbox to use the given OS credentials for the sudo privileges that are required when the playbook uses "become". Checking this box enables the --ask-become argument and vCommander will supply the credentials. Unchecked by default.
 * Playbook URL: Input field for Playbook URL - HTTP(s), file S3 path for playbook (one of URL or YAML must be specified)
 * Playbook YAML: Text Area for Playbook YAML - Inline YAML playbook (one of URL or YAML must be specified)
 * Extra Variables: Text Area for Extra Variables - Set of additional variables as key=value (one per line) or YAML/JSON. If filename, prepend with @.
@@ -71,4 +75,4 @@ To change the logging level, add the following named loggers to the Log4j config
 ## Notes
    * To use the plug-in workflow step, you must install the ansible-playbook command on the target VM. See *Installing Ansible Playbooks* on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
 
-   * You must install Ansible playbooks as the root user, and you must run sudo without prompting for a password. The Amazon Linux 1 and 2, RedHat and Ubuntu AMIs from the AWS Marketplace are already set up to not require a password. In the case of the Amazon Linux and RedHat AMIs, the ec2-user account is set up to not require a password, and for the Ubuntu AMI, the the ubuntu account is set up to not require a password. For VMs deployed from other templates, you must modify the sudoers file to allow the user to run sudo commands without prompting for a password. To learn how, see https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/.
+   * You must install Ansible playbooks as the root user. 

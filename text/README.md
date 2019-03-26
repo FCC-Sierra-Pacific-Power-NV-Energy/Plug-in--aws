@@ -6,7 +6,11 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 ## Changelog
 
-**Version 1.0:** Initial version.
+**Version 1.1:**
+ * Fixed issue where plugin was hanging on failure.
+ * Now creating output folder if it does not exist.
+
+**Version 1.0:** Initial version. 
 
 ## Plug-in steps in this package
 + Text Input/Output
@@ -146,9 +150,12 @@ See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Pl
 
 ### Generic return codes
 
-- 0 successful match (RegEx, XPath, JSONPath)
+- 0 successful match (RegEx, XPath, JSONPath) or transformation (XSLT)
 - 1 no match (RegEx, XPath, JSONPath)
 - 2 error reading input or parsing expression
+- 3 invalid or missing XSL file
+- 4 error while transforming with XSLT
+- 5 error while attempting to create output directory
 
 ## Logging
 To change the logging level, add the following named loggers to the Log4j configuration file located at: 

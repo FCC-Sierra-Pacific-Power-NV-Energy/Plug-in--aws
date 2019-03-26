@@ -4,7 +4,8 @@ This package contains a collection of vCommander plug-in workflow steps for inte
 
 ## Changelog
 
-**Version 1.0:** Initial version.
+- **Version 2.0:** Updated underlying Kubernetes library requiring updates to resource API paths. The Version 2.0 plug-in is supported with vCommander release 7.1.0 and higher.
+- **Version 1.0:** Initial version. The Version 1.0 plug-in is supported with vCommander release 7.0.2 and higher.
 
 ## Plug-in steps in this package
 
@@ -120,8 +121,6 @@ This package contains a collection of vCommander plug-in workflow steps for inte
   - If no namespace is specified in the Namespace field, and no namespace is specified in the manifest, the default namespace is used
 
 ## Installation
-
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
 
 See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
 

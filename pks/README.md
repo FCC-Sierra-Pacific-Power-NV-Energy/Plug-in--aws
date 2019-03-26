@@ -6,9 +6,12 @@ It was designed specifically for use in the vCommander workflow extension scenar
 
 ## Changelog
 
-**Version 1.1:** Added List PKS Kubernetes Clusters step and Delete PKS Kubernetes Cluster step. Added extra error handling and logging.
-
-**Version 1.0:** Initial version.
+- **Version 2.0:** Updated underlying Kubernetes library requiring updates to resource API paths. The Version 2.0 plug-in is supported with vCommander release 7.1.0 and higher.
+- **Version 1.1:** 
+  - Added List PKS Kubernetes Clusters step and Delete PKS Kubernetes Cluster step. 
+  - Added extra error handling and logging.
+  - The Version 1.1 and 1.0 plug-ins are supported with vCommander release 7.0.2 and higher.
+- **Version 1.0:** Initial version.
 
 ## Plug-in steps in this package
 
@@ -98,8 +101,6 @@ It was designed specifically for use in the vCommander workflow extension scenar
 * Sys Credentials: Drop-down that sets the system credentials for the PKS API server
 
 ## Installation
-
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
 
 See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
 

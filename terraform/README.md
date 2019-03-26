@@ -6,6 +6,9 @@ It was designed specifically for use in the *Deploying User Provided Terraform C
 
 ## Changelog
 
+**Version 1.1:**
+ * Fixed working directory variable substitution. 
+
 **Version 1.0:** Initial version.
 
 ## Plug-in steps in this package
@@ -16,7 +19,7 @@ It was designed specifically for use in the *Deploying User Provided Terraform C
 ### Generate Terraform Plan
 **Purpose:** Runs the `terraform plan` command to generate a list of changes that would be performed
 
-**Details:** 
+**Details:**
 
  * [https://www.terraform.io/docs/commands/plan.html](https://www.terraform.io/docs/commands/plan.html)
  * This step uses an intermediate server, which is accessible through SSH, to keep the Terraform state. Referred to hereafter as the Terraform host.
