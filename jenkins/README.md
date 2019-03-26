@@ -25,7 +25,7 @@ This package contains a vCommander plug-in workflow step that you can use to tri
 * Sys Credentials:  System credentials to use for accessing the Jenkins server
 * Jenkins Hostname: Input field for hostname or IP of the Jenkins server
 * Job Name: Input field for name of the job to trigger 
-* Job Parameters: Text area for parameters to include for parameterized builds. Use the URL query parameter format (key1=value1&key2=value2).
+* Job Parameters: Text area for parameters to include for parameterized builds. Use the URL query parameter format `key1=value1&key2=value2` .
 
 ## Installation
 
