@@ -26,7 +26,7 @@ This step makes uses of the AWS SSM toolkit and requires a set of prerequisites 
 
 Workflow plug-in steps are supported with vCommander release 7.0 and higher. 
 
-See [Adding Workflow Plug-in Steps](http://docs.embotics.com/vCommander/Adding-Plug-In-WF-Steps.htm) in the vCommander documentation to learn how to install this package. 
+See [Adding Workflow Plug-in Steps](https://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
 
 ## Return codes
 
