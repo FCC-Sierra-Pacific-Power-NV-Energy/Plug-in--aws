@@ -5,6 +5,7 @@ This package contains a vCommander workflow plug-in step for running commands on
 ## Change log
 
 **Version 1.0:** Initial version.
+**Version 1.1:** Updated for vCommander 7.5
 
 ## Plug-in steps in this package
 + Run Command
