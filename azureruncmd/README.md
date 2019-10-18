@@ -5,7 +5,7 @@ This package contains a vCommander workflow plug-in step for running commands on
 ## Change log
 
 **Version 1.0:** Initial version.
-**Version 1.1:** Updated for vCommander 7.5
+**Version 1.3:** Updated for vCommander 7.5 and supports credential variables.
 
 ## Plug-in steps in this package
 + Run Command
@@ -27,7 +27,9 @@ This package contains a vCommander workflow plug-in step for running commands on
   * Command
 
 **Inputs:**
-
+  * System Credential - this credential can be passed into the command if required
+    ** Username as "%{provided_credential.username}"
+    ** Password as "%{provided_credential.password}"
   * Command - The command to run on the target
 
 
