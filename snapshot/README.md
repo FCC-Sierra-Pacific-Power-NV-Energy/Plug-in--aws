@@ -1,6 +1,6 @@
 # Snapshot Plug-in Workflow Step Package
 
-This package contains a collection of vCommander plug-in workflow steps for managing VMware snapshots on Windows. 
+This package contains a collection of vCommander plug-in workflow steps for managing VMware snapshots. 
 
 It can be used in the vCommander workflow extension scenario *Patching Windows VMs*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of vCommander scenarios.
 
