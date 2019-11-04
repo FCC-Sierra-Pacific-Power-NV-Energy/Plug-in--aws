@@ -6,6 +6,9 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 ## Changelog
 
+**Version 1.2:**
+ * Add Search and Replace
+
 **Version 1.1:**
  * Fixed issue where plugin was hanging on failure.
  * Now creating output folder if it does not exist.
@@ -18,6 +21,7 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 + RegEx Extract
 + XPath Extract
 + XSLT Transform
++ Search and Replace
 
 ### Text Input/Output 
 
@@ -140,6 +144,26 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 - Stylesheet: Input field for an XSL stylesheet. This can be a path to a stylesheet saved on disk, or, if the field is left blank, `junit-noframes-emb.xsl` from Apache Ant is used. 
 - Parameters: Text area for key=value pairs on parameters to pass in to the XSL stylesheet. Each key=value pair should be on a new line.
 
+### Search and Replace
+
+**Purpose:** Replace all instances of a given string with a new value.
+
+**Details:** 
+
+- Searches for the the specified text and replaces it with the new value
+
+**Workflows supporting this plug-in step:**
+
+  * All
+
+**Inputs:**
+
+- Step Name: Input field for the name of the step
+- Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
+- Input: Input field for the data to be searched. The text input can be piped in through a variable.
+- Search for: The text to search for.
+- Replace with: The replacement value. 
+
 ## Installation
 
 Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
@@ -181,3 +205,7 @@ To change the logging level, add the following named loggers to the Log4j config
 + **XSLT Transform** 
     + Loggers:
       + `<Logger level="DEBUG" name="plugin.text.xslt"/>`
+          
++ **Search and Replace** 
+    + Loggers:
+      + `<Logger level="DEBUG" name="plugin.text.replace"/>`
