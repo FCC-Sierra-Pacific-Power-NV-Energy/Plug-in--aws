@@ -1,10 +1,12 @@
 # Snapshot Plug-in Workflow Step Package
 
-This package contains a collection of vCommander plug-in workflow steps for managing VMware snapshots. 
+This package contains a collection of Commander plug-in workflow steps for managing VM snapshots on VMware, AWS & Azure
 
-It can be used in the vCommander workflow extension scenario *Patching Windows VMs*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of vCommander scenarios.
+It can be used in the Commander workflow extension scenario *Patching Windows VMs*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of Commander scenarios.
 
 ## Changelog
+
+**Version 2.0:** Added support for AWS and Azure.
 
 **Version 1.0:** Initial version.
 
@@ -31,8 +33,8 @@ It can be used in the vCommander workflow extension scenario *Patching Windows V
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
 - Snapshot Name: Input field for the name of the snapshot to create
 - Description: (Optional) Input field for Snapshot description
-- Capture Memory option
-- Quiesce Filesystem option
+- Capture Memory option (VMware Only)
+- Quiesce Filesystem option (VMware Only)
 
 See the vCenter Client documentation for more information on the Capture Memory and Quiesce Filesystem options.
 
@@ -56,7 +58,7 @@ See the vCenter Client documentation for more information on the Capture Memory 
 
 ## Revert Snapshot
 
-**Purpose:**  Reverts to the latest snapshot with a given name
+**Purpose:**  Reverts to the latest snapshot with a given name (VMware Only)
 
 **Workflows supporting this plug-in step:**
 
