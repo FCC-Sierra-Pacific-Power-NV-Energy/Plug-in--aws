@@ -1,11 +1,11 @@
 # azureruncommand Workflow Plug-in Step Package
 
-This package contains a vCommander workflow plug-in step for running commands on virtual machines hosted in Microsoft Azure.
+This package contains a Commander workflow plug-in step for running commands on virtual machines hosted in Microsoft Azure.
 
 ## Change log
 
 **Version 1.0:** Initial version.
-**Version 1.3:** Updated for vCommander 7.5 and supports credential variables.
+**Version 1.3:** Updated for Commander 7.5 and supports credential variables.
 
 ## Plug-in steps in this package
 + Run Command
@@ -35,9 +35,9 @@ This package contains a vCommander workflow plug-in step for running commands on
 
 ## Installation
 
-Workflow plug-in steps are supported with vCommander release 7.0 and higher. 
+Workflow plug-in steps are supported with Commander release 7.0 and higher. 
 
-See [Adding Workflow Plug-in Steps](http://docs.embotics.com/vCommander/Adding-Plug-In-WF-Steps.htm) in the vCommander documentation to learn how to install this package. 
+See [Adding Workflow Plug-in Steps](http://docs.embotics.com/Commander/Adding-Plug-In-WF-Steps.htm) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 
