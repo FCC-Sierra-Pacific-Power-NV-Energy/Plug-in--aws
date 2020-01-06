@@ -1,6 +1,6 @@
 # Azure Plug-in Workflow Step Package
 
-This package contains a vCommander plug-in workflow step to retrieve the kubeconfig of an AKS Kubernetes cluster created through an Azure template in a vCommander service. 
+This package contains a Commander plug-in workflow step to retrieve the kubeconfig of an AKS Kubernetes cluster created through an Azure template in a vCommander service. 
 
 It was designed specifically for use in the scenario *Deploying a Kubernetes Cluster on Azure AKS*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
 
@@ -12,9 +12,9 @@ It was designed specifically for use in the scenario *Deploying a Kubernetes Clu
 + Get AKS Kubeconfig
 
 ### Get AKS Kubeconfig
-**Purpose:** Retrieves the kubeconfig of an AKS Kubernetes cluster that is created through an ARM template in vCommander.
+**Purpose:** Retrieves the kubeconfig of an AKS Kubernetes cluster that is created through an ARM template in Commander.
 
-**Details:** Azure credentials are retrieved from vCommander. The Azure REST API is called to retrieve an OAuth2 access token. The Azure subscription ID, resource group ID and AKS k8s cluster name are used to retrieve the kubeconfig through the Azure REST API. The kubeconfig is returned as the step's output.
+**Details:** Azure credentials are retrieved from Commander. The Azure REST API is called to retrieve an OAuth2 access token. The Azure subscription ID, resource group ID and AKS k8s cluster name are used to retrieve the kubeconfig through the Azure REST API. The kubeconfig is returned as the step's output.
 
 **Workflows supporting this plug-in step:**
 
@@ -27,13 +27,13 @@ It was designed specifically for use in the scenario *Deploying a Kubernetes Clu
 
 * Step Name: Input field for the name of the step. 
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-* Cluster Name: Input field for the name of the cluster. This is the friendly managed system name in vCommander.
+* Cluster Name: Input field for the name of the cluster. This is the friendly managed system name in Commander.
 
 ## Installation
 
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
+Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](http://docs.embotics.com/Commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 
