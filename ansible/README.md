@@ -1,8 +1,8 @@
 # Ansible Plug-in Workflow Step Package
 
-This package contains a vCommander plug-in workflow step for integrating with Ansible (https://www.ansible.com/). 
+This package contains a Commander plug-in workflow step for integrating with Ansible (https://www.ansible.com/). 
 
-It was designed specifically for use in the vCommander workflow extension scenario *Installing Ansible Playbooks*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
+It was designed specifically for use in the Commander workflow extension scenario *Installing Ansible Playbooks*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
 
 ## Changelog
 
@@ -44,9 +44,9 @@ It was designed specifically for use in the vCommander workflow extension scenar
 
 ## Installation
 
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
+Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 
