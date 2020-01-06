@@ -1,6 +1,6 @@
 # wfplugins-awsrunoscommand Workflow Plug-in Step Package
 
-This package contains a vCommander workflow plug-in step to execute Guest OS commands on Windows and Linux EC2 Instances in AWS. 
+This package contains a Commander workflow plug-in step to execute Guest OS commands on Windows and Linux EC2 Instances in AWS. 
 This step makes uses of the AWS SSM toolkit and requires a set of prerequisites be fufilled before it will function. See the AWS SSM documentation for details: https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html
 
 ## Changelog
@@ -24,7 +24,7 @@ This step makes uses of the AWS SSM toolkit and requires a set of prerequisites 
 
 ## Installation
 
-Workflow plug-in steps are supported with vCommander release 7.0 and higher. 
+Workflow plug-in steps are supported with Commander release 7.0 and higher. 
 
 See [Adding Workflow Plug-in Steps](https://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
 
