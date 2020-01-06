@@ -1,8 +1,8 @@
 # Email Plug-in Workflow Step Package
 
-This package contains a vCommander plug-in workflow step for sending an email with an attachment.
+This package contains a Commander plug-in workflow step for sending an email with an attachment.
 
-It can be used with several vCommander workflow extension scenarios, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of vCommander scenarios.
+It can be used with several Commander workflow extension scenarios, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of Commander scenarios.
 
 ## Changelog
 
@@ -29,14 +29,14 @@ It can be used with several vCommander workflow extension scenarios, which can b
 * CC: (Optional) Input field for the "CC" recipients. Single email address or or semi-colon-separated list of addresses.
 * Subject: Input field for the email subject
 * Body: Text area for the email body
-* Attachment: (Optional) Input field for the attachment. Can be a file accessible to the vCommander service account, in-line content, or a variable that resolves to a file or the attachment content.
+* Attachment: (Optional) Input field for the attachment. Can be a file accessible to the Commander service account, in-line content, or a variable that resolves to a file or the attachment content.
 * Content Type: (Optional) Input field for the attachment content type. Required if attachment is specified. For valid options, see https://www.iana.org/assignments/media-types/media-types.xhtml.
 
 ## Installation
 
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
+Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](http://docs.embotics.com/Commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 
