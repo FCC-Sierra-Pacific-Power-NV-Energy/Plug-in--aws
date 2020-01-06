@@ -26,9 +26,9 @@ This plugin will delete an EBS snapshot for the first volume attached to an EC2 
 
 ## Installation
 
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
+Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](http://docs.embotics.com/Commander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
 
 ## Return codes
 
